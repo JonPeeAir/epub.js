@@ -879,6 +879,7 @@ class Rendition {
 		});
 
 		contents.on(EVENTS.CONTENTS.SELECTED, (e) => this.triggerSelectedEvent(e, contents));
+		contents.on(EVENTS.CONTENTS.UNSELECTED, () => this.emit(EVENTS.RENDITION.UNSELECTED));
 	}
 
 	/**

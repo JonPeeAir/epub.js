@@ -972,7 +972,13 @@ class Contents {
 				this.emit(EVENTS.CONTENTS.SELECTED, cfirange);
 				this.emit(EVENTS.CONTENTS.SELECTED_RANGE, range);
 			}
+      else {
+        this.emit(EVENTS.CONTENTS.UNSELECTED);
+      }
 		}
+    else {
+      this.emit(EVENTS.CONTENTS.UNSELECTED);
+    }
 	}
 
 	/**
